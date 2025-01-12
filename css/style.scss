@@ -1,0 +1,20 @@
+
+
+$primary: orange;
+
+
+@mixin ButtonText{
+    color: $primary;
+}
+
+
+
+
+.button1{
+   @include ButtonText
+}
+
+
+.button2{
+    @include ButtonText
+}
