@@ -1,7 +1,55 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-$primary: orange;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
+$primary: #825514;
 
 @mixin ButtonText{
     color: $primary;
@@ -13,4 +61,106 @@ $primary: orange;
 
 .button2{
     @include ButtonText
+}
+
+.header {
+    background: rgb(213, 182, 241);
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 0px;
+    .icon{
+        background:url('../img/S__2736133\ 2.png') no-repeat;
+        background-size: 50px 50px;
+        height: 50px;
+        width: 50px;
+    }
+    .nav{
+        display: flex;
+        background: paleturquoise;
+        li{
+            padding: 12px 10px;
+            a {
+                font-size: 1rem;
+                font-family: 'Noto Sans TC';
+                font-weight: 700;
+                color: $primary;
+            }
+        }
+    }
+}
+
+.aboutme {
+    background: rgb(187, 187, 255);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    .photo{
+        background:url('../img/IMG_96971.png') no-repeat;
+        background-size: 398px 391px;
+        height: 391px;
+        width: 398px;
+        border-radius: 8px;
+    }
+    .content{
+        width: 574px;
+        h3{
+            font-size: 1.5rem;
+            font-family: 'Noto Sans TC';
+            font-weight: 700;
+            color: #000;
+        }
+        p {
+            font-size: 1rem;
+            font-family: 'Noto Sans TC';
+            font-weight: 400;
+        }
+    }
+}
+
+.projects {
+    background: rgb(255, 210, 238);
+    text-align: center;
+    h4{
+        font-family: 'Noto Sans TC';
+        font-size: 2rem;
+        padding: 16px 0px;
+        text-align: center;
+    }
+    .project {
+        display: flex;
+        justify-content: space-around;
+        .project1 {
+            background: rgb(138, 138, 218);
+            .img1 {
+                background:url('../img/ing1.png') no-repeat;
+                background-size: 330px 218px;
+                height: 218px;
+                width: 330px;
+            }
+        }
+        .project2 {
+            background: rgb(141, 186, 238);
+            .img2 {
+                background: url('../img/img2.png') no-repeat;
+                background-size: 330px 218px;
+                height: 218px;
+                width: 330px;
+            }
+        }
+        .project3 {
+            background: rgb(255, 210, 238);
+            .img3 {
+                background: url('../img/img3.png') no-repeat;
+                background-size: 330px 218px;
+                height: 218px;
+                width: 330px;
+            }
+        }
+    }
+    .more {
+        background: $primary;
+        font-family: 'Noto Sans TC';
+        font-size: 1rem;
+        color: #fff;
+    }
 }
