@@ -113,6 +113,7 @@ $primary: #825514;
             font-size: 1rem;
             font-family: 'Noto Sans TC';
             font-weight: 400;
+            line-height: 1.5rem;
         }
     }
 }
@@ -120,22 +121,42 @@ $primary: #825514;
 .projects {
     background: rgb(255, 210, 238);
     text-align: center;
-    h4{
-        font-family: 'Noto Sans TC';
-        font-size: 2rem;
-        padding: 16px 0px;
-        text-align: center;
+    height: 603px;
+    padding: 66px 0px;
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .line {
+            width: 128px;
+            height: 1px;
+            border-top: solid #000 1px;
+        }
+        h4{
+            font-family: 'Noto Sans TC';
+            font-size: 2rem;
+            padding: 16px 15px;
+        }  
     }
     .project {
         display: flex;
         justify-content: space-around;
         .project1 {
             background: rgb(138, 138, 218);
+            height: 279px;
             .img1 {
                 background:url('../img/ing1.png') no-repeat;
                 background-size: 330px 218px;
                 height: 218px;
                 width: 330px;
+            }
+            p {
+                font-family: 'Noto Sans TC';
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #000;
+                padding-top: 12px;
+                text-align: left;
             }
         }
         .project2 {
@@ -146,6 +167,14 @@ $primary: #825514;
                 height: 218px;
                 width: 330px;
             }
+            p {
+                font-family: 'Noto Sans TC';
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #000;
+                padding-top: 12px;
+                text-align: left;
+            }
         }
         .project3 {
             background: rgb(255, 210, 238);
@@ -155,6 +184,14 @@ $primary: #825514;
                 height: 218px;
                 width: 330px;
             }
+            p {
+                font-family: 'Noto Sans TC';
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #000;
+                padding-top: 12px;
+                text-align: left;
+            }
         }
     }
     .more {
@@ -162,5 +199,40 @@ $primary: #825514;
         font-family: 'Noto Sans TC';
         font-size: 1rem;
         color: #fff;
+        padding: 12px 24px;
+        border-radius: 8px;
+
+    }
+}
+.footer {
+    background: rgb(213, 182, 241);
+    padding: 66px 0px;
+    .h1 {
+        font-family: 'Noto Sans TC';
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 0PX 0PX 40PX 0PX;
+    }
+    .h2 {
+        font-family: 'Noto Sans TC';
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0PX 0PX 32PX 0PX;
+        color: #4C4136;
+    }
+    ul {
+        display: flex;
+    }
+    .h3 {
+        font-family: 'Noto Sans TC';
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        line-height: 1.5rem;
+        color: #4C4136;
+        .mail{
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
     }
 }

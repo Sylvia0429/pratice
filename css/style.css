@@ -113,17 +113,29 @@ table {
   font-size: 1rem;
   font-family: "Noto Sans TC";
   font-weight: 400;
+  line-height: 1.5rem;
 }
 
 .projects {
   background: rgb(255, 210, 238);
   text-align: center;
+  height: 603px;
+  padding: 66px 0px;
 }
-.projects h4 {
+.projects .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects .title .line {
+  width: 128px;
+  height: 1px;
+  border-top: solid #000 1px;
+}
+.projects .title h4 {
   font-family: "Noto Sans TC";
   font-size: 2rem;
-  padding: 16px 0px;
-  text-align: center;
+  padding: 16px 15px;
 }
 .projects .project {
   display: flex;
@@ -131,12 +143,21 @@ table {
 }
 .projects .project .project1 {
   background: rgb(138, 138, 218);
+  height: 279px;
 }
 .projects .project .project1 .img1 {
   background: url("../img/ing1.png") no-repeat;
   background-size: 330px 218px;
   height: 218px;
   width: 330px;
+}
+.projects .project .project1 p {
+  font-family: "Noto Sans TC";
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  padding-top: 12px;
+  text-align: left;
 }
 .projects .project .project2 {
   background: rgb(141, 186, 238);
@@ -147,6 +168,14 @@ table {
   height: 218px;
   width: 330px;
 }
+.projects .project .project2 p {
+  font-family: "Noto Sans TC";
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  padding-top: 12px;
+  text-align: left;
+}
 .projects .project .project3 {
   background: rgb(255, 210, 238);
 }
@@ -156,9 +185,52 @@ table {
   height: 218px;
   width: 330px;
 }
+.projects .project .project3 p {
+  font-family: "Noto Sans TC";
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  padding-top: 12px;
+  text-align: left;
+}
 .projects .more {
   background: #825514;
   font-family: "Noto Sans TC";
   font-size: 1rem;
   color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.footer {
+  background: rgb(213, 182, 241);
+  padding: 66px 0px;
+}
+.footer .h1 {
+  font-family: "Noto Sans TC";
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0PX 0PX 40PX 0PX;
+}
+.footer .h2 {
+  font-family: "Noto Sans TC";
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0PX 0PX 32PX 0PX;
+  color: #4C4136;
+}
+.footer ul {
+  display: flex;
+}
+.footer .h3 {
+  font-family: "Noto Sans TC";
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  line-height: 1.5rem;
+  color: #4C4136;
+}
+.footer .h3 .mail {
+  font-size: 1.2rem;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
