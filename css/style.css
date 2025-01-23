@@ -95,12 +95,16 @@ table {
   align-items: center;
   justify-content: center;
 }
+.aboutme > .in {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .aboutme .photo {
   background: url("../img/IMG_96971.png") no-repeat;
-  background-size: 398px 391px;
-  height: 391px;
-  width: 398px;
+  padding-bottom: 100%;
+  width: 100%;
   border-radius: 8px;
+  background-size: contain;
 }
 .aboutme .content {
   width: 574px;
@@ -127,6 +131,10 @@ table {
   text-align: center;
   padding: 66px 0px;
 }
+.projects > .in {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .projects .title {
   display: flex;
   align-items: center;
@@ -136,6 +144,7 @@ table {
   width: 128px;
   height: 1px;
   border-top: solid #000 1px;
+  border-color: #CAC4D0;
 }
 .projects .title h4 {
   font-family: "Noto Sans TC";
@@ -197,6 +206,10 @@ table {
   background: rgb(213, 182, 241);
   padding: 66px 0px;
 }
+.footer > .in {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .footer .h1 {
   font-family: "Noto Sans TC";
   font-size: 1.75rem;
@@ -210,8 +223,12 @@ table {
   padding: 0PX 0PX 32PX 0PX;
   color: #4C4136;
 }
-.footer ul {
+.footer .h2 ul {
   display: flex;
+  padding-top: 8px;
+}
+.footer .h2 ul li {
+  padding-right: 4px;
 }
 .footer .h3 {
   font-family: "Noto Sans TC";
@@ -229,4 +246,16 @@ table {
 .footer .h3 .mail {
   font-size: 1.5rem;
   font-weight: 500;
+  line-height: 2rem;
+}
+
+.out .rwd {
+  background: pink;
+  height: 50px;
+}
+@media (max-width: 768px) {
+  .out .rwd {
+    background: yellow;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
