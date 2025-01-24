@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -55,18 +56,21 @@ table {
 }
 
 .button1 {
-  color: #825514;
+  color: #0A95C3;
 }
 
 .button2 {
-  color: #825514;
+  color: #0A95C3;
 }
 
 .header {
-  background: rgb(213, 182, 241);
-  display: flex;
-  justify-content: space-around;
   padding: 32px 0px;
+}
+.header > .in {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .header .icon {
   background: url("../img/S__2736133 2.png") no-repeat;
@@ -76,7 +80,6 @@ table {
 }
 .header .nav {
   display: flex;
-  background: paleturquoise;
   align-items: center;
 }
 .header .nav li {
@@ -86,28 +89,31 @@ table {
   font-size: 1rem;
   font-family: "Noto Sans TC";
   font-weight: 700;
-  color: #825514;
+  color: #0A95C3;
 }
 
 .aboutme {
-  background: rgb(187, 187, 255);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-bottom: solid #CAC4D0 1px;
 }
 .aboutme > .in {
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 66px 0px;
 }
 .aboutme .photo {
-  background: url("../img/IMG_96971.png") no-repeat;
-  padding-bottom: 100%;
+  background: url("../img/頭貼.jpg") no-repeat;
   width: 100%;
   border-radius: 8px;
-  background-size: contain;
+  background-size: cover;
+  padding-bottom: 35%;
+  background-position: center;
+  border: solid #999999 1px;
 }
 .aboutme .content {
-  width: 574px;
+  padding: 32px 0px;
+  padding-left: 68px;
 }
 .aboutme .content h3 {
   font-size: 1.5rem;
@@ -127,9 +133,9 @@ table {
 }
 
 .projects {
-  background: rgb(255, 210, 238);
   text-align: center;
   padding: 66px 0px;
+  border-bottom: solid #CAC4D0 1px;
 }
 .projects > .in {
   max-width: 1000px;
@@ -143,8 +149,7 @@ table {
 .projects .title .line {
   width: 128px;
   height: 1px;
-  border-top: solid #000 1px;
-  border-color: #CAC4D0;
+  border-top: solid #CAC4D0 1px;
 }
 .projects .title h4 {
   font-family: "Noto Sans TC";
@@ -160,40 +165,62 @@ table {
   font-family: "Noto Sans TC";
   font-size: 1.2rem;
   font-weight: 600;
+  line-height: 1.5rem;
   color: #000;
-  padding-top: 12px;
+  padding: 12px 0px;
   text-align: left;
 }
 .projects .project .project1 {
-  background: rgb(138, 138, 218);
-  height: 279px;
+  width: 32%;
 }
 .projects .project .project1 .img1 {
   background: url("../img/ing1.png") no-repeat;
-  background-size: 330px 218px;
-  height: 218px;
-  width: 330px;
+  width: 100%;
+  background-size: cover;
+  padding-bottom: 65%;
+  border: solid #CAC4D0 1px;
+  border-radius: 8px;
+}
+.projects .project .project1:hover {
+  text-decoration: underline;
+}
+.projects .project .project1:hover .img1 {
+  border: solid #CAC4D0 2px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 .projects .project .project2 {
-  background: rgb(141, 186, 238);
+  width: 32%;
 }
 .projects .project .project2 .img2 {
   background: url("../img/img2.png") no-repeat;
-  background-size: 330px 218px;
-  height: 218px;
-  width: 330px;
+  width: 100%;
+  background-size: cover;
+  background-position: 0px -10px;
+  padding-bottom: 65%;
+  border: solid #CAC4D0 1px;
+  border-radius: 8px;
+}
+.projects .project .project2:hover {
+  text-decoration: underline;
 }
 .projects .project .project3 {
-  background: rgb(255, 210, 238);
+  width: 32%;
 }
 .projects .project .project3 .img3 {
   background: url("../img/img3.png") no-repeat;
-  background-size: 330px 218px;
-  height: 218px;
-  width: 330px;
+  width: 100%;
+  background-size: cover;
+  padding-bottom: 65%;
+  border: solid #CAC4D0 1px;
+  border-radius: 8px;
+}
+.projects .project .project3:hover {
+  text-decoration: underline;
+  box-sizing: border-box;
 }
 .projects .more {
-  background: #825514;
+  background: #0A95C3;
   font-family: "Noto Sans TC";
   font-size: 1rem;
   color: #fff;
@@ -203,7 +230,6 @@ table {
 }
 
 .footer {
-  background: rgb(213, 182, 241);
   padding: 66px 0px;
 }
 .footer > .in {
@@ -225,7 +251,7 @@ table {
 }
 .footer .h2 ul {
   display: flex;
-  padding-top: 8px;
+  padding-top: 14px;
 }
 .footer .h2 ul li {
   padding-right: 4px;
@@ -247,15 +273,4 @@ table {
   font-size: 1.5rem;
   font-weight: 500;
   line-height: 2rem;
-}
-
-.out .rwd {
-  background: pink;
-  height: 50px;
-}
-@media (max-width: 768px) {
-  .out .rwd {
-    background: yellow;
-    width: 100%;
-  }
 }/*# sourceMappingURL=style.css.map */

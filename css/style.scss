@@ -2,11 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
-$primary: #825514;
+$primary: #0A95C3;
+$outline: #CAC4D0;
 
 @mixin ButtonText {
     color: $primary;
 }
+
 
 @mixin center {
     max-width: 1000px;
@@ -22,10 +24,13 @@ $primary: #825514;
 }
 
 .header {
-    background: rgb(213, 182, 241);
-    display: flex;
-    justify-content: space-around;
     padding: 32px 0px;
+    
+    >.in {
+        @include center;
+        display: flex;
+        justify-content: space-between;
+    }
 
     .icon {
         background: url('../img/S__2736133\ 2.png') no-repeat;
@@ -36,7 +41,6 @@ $primary: #825514;
 
     .nav {
         display: flex;
-        background: paleturquoise;
         align-items: center;
 
         li {
@@ -53,25 +57,28 @@ $primary: #825514;
 }
 
 .aboutme {
-    background: rgb(187, 187, 255);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-bottom: solid #CAC4D0 1px;
 
     >.in {
         @include center;
+        display: flex;
+        align-items: center;
+        padding: 66px 0px;
     }
 
     .photo {
-        background: url('../img/IMG_96971.png') no-repeat;
-        padding-bottom: 100%;
+        background: url('../img/頭貼.jpg') no-repeat;
         width: 100%;
         border-radius: 8px;
-        background-size: contain;
+        background-size: cover;
+        padding-bottom: 35%;
+        background-position: center;
+        border: solid #999999 1px;
     }
 
     .content {
-        width: 574px;
+        padding: 32px 0px;
+        padding-left: 68px;
 
         h3 {
             font-size: 1.5rem;
@@ -95,9 +102,9 @@ $primary: #825514;
 }
 
 .projects {
-    background: rgb(255, 210, 238);
     text-align: center;
     padding: 66px 0px;
+    border-bottom: solid #CAC4D0 1px;
 
     >.in {
         @include center;
@@ -111,8 +118,7 @@ $primary: #825514;
         .line {
             width: 128px;
             height: 1px;
-            border-top: solid #000 1px;
-            border-color: #CAC4D0;
+            border-top: solid #CAC4D0 1px;
         }
 
         h4 {
@@ -131,43 +137,68 @@ $primary: #825514;
             font-family: 'Noto Sans TC';
             font-size: 1.2rem;
             font-weight: 600;
+            line-height: 1.5rem;
             color: #000;
-            padding-top: 12px;
+            padding: 12px 0px;
             text-align: left;
         }
 
         .project1 {
-            background: rgb(138, 138, 218);
-            height: 279px;
+            width: 32%;
 
             .img1 {
                 background: url('../img/ing1.png') no-repeat;
-                background-size: 330px 218px;
-                height: 218px;
-                width: 330px;
+                width: 100%;
+                background-size: cover;
+                padding-bottom: 65%;
+                border: solid $outline 1px;
+                border-radius: 8px;
+            }
+        }
+
+        .project1:hover {
+            text-decoration: underline;
+            .img1 {
+                border: solid $outline 2px;
+                border-radius: 8px;
+                box-sizing: border-box;
             }
         }
 
         .project2 {
-            background: rgb(141, 186, 238);
+            width: 32%;
 
             .img2 {
                 background: url('../img/img2.png') no-repeat;
-                background-size: 330px 218px;
-                height: 218px;
-                width: 330px;
+                width: 100%;
+                background-size: cover;
+                background-position: 0px -10px;
+                padding-bottom: 65%;
+                border: solid $outline 1px;
+                border-radius: 8px;
             }
         }
 
+        .project2:hover {
+            text-decoration: underline;
+        }
+
         .project3 {
-            background: rgb(255, 210, 238);
+            width: 32%;
 
             .img3 {
                 background: url('../img/img3.png') no-repeat;
-                background-size: 330px 218px;
-                height: 218px;
-                width: 330px;
+                width: 100%;
+                background-size: cover;
+                padding-bottom: 65%;
+                border: solid $outline 1px;
+                border-radius: 8px;
             }
+        }
+
+        .project3:hover {
+            text-decoration: underline;
+            box-sizing: border-box;
         }
     }
 
@@ -183,7 +214,6 @@ $primary: #825514;
 }
 
 .footer {
-    background: rgb(213, 182, 241);
     padding: 66px 0px;
 
     >.in {
@@ -206,7 +236,7 @@ $primary: #825514;
 
         ul {
             display: flex;
-            padding-top: 8px;
+            padding-top: 14px;
 
             li {
                 padding-right: 4px;
@@ -232,20 +262,6 @@ $primary: #825514;
             font-size: 1.5rem;
             font-weight: 500;
             line-height: 2rem;
-        }
-    }
-}
-
-.out {
-    .rwd {
-        background: pink;
-        height: 50px;
-    }
-
-    @media (max-width:768px) {
-        .rwd {
-            background: yellow;
-            width: 100%;
         }
     }
 }
