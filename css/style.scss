@@ -276,7 +276,6 @@ div {
                 img {
                     box-shadow: 0px 1px 3px 1px #c4c4c4;
                     border-radius: 8px;
-                    transition: all 0.5s;
                 }
                 img:hover {
                     box-shadow: 0px 0.5px 1.5px 0.5px #c4c4c4;
@@ -324,7 +323,7 @@ div {
             padding-bottom: 40%;
         }
         .content {
-            padding: 32px 16px;
+            padding: 32px 16px 0px 16px;
         }
     }
 
