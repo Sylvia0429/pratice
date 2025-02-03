@@ -96,7 +96,7 @@ div {
 
 .aboutme {
   border-bottom: solid #CAC4D0 1px;
-  padding-top: 114px;
+  padding-top: 82px;
 }
 .aboutme > .in {
   max-width: 1000px;
@@ -150,7 +150,7 @@ div {
   justify-content: center;
 }
 .projects .title .line {
-  width: 128px;
+  width: 30vw;
   height: 1px;
   border-top: solid #CAC4D0 1px;
 }

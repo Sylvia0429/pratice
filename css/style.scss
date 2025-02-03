@@ -59,7 +59,7 @@ div {
 
 .aboutme {
     border-bottom: solid #CAC4D0 1px;
-    padding-top: 114px;
+    padding-top: 82px;
 
     >.in {
         @include center;
@@ -118,7 +118,7 @@ div {
         justify-content: center;
 
         .line {
-            width: 128px;
+            width: 30vw;
             height: 1px;
             border-top: solid #CAC4D0 1px;
         }
