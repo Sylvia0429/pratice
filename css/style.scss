@@ -118,7 +118,7 @@ div {
         justify-content: center;
 
         .line {
-            width: 30vw;
+            width: 25%;
             height: 1px;
             border-top: solid #CAC4D0 1px;
         }
@@ -145,21 +145,37 @@ div {
             text-align: left;
         }
 
+        .project1, .project2, .project3 {
+            .mask {
+                overflow: hidden;
+                border: 1px solid $outline;
+                border-radius: 8px;
+            }
+        }
+
         .project1 {
             width: 32%;
-
             .img1 {
                 background: url('../img/ing1.png') no-repeat;
                 width: 100%;
                 background-size: cover;
                 padding-bottom: 65%;
-                border: solid $outline 1px;
                 border-radius: 8px;
+                transition: all 0.5s;
             }
         }
 
         .project1:hover {
             text-decoration: underline;
+            .mask {
+                overflow: hidden;
+                border: 1px solid $outline;
+                border-radius: 8px;
+            }
+                .img1 {
+                    transform: scale(1.2,1.2);
+                    transition: all 0.5s;
+                }
         }
 
         .project2 {
@@ -171,13 +187,22 @@ div {
                 background-size: cover;
                 background-position: 0px -10px;
                 padding-bottom: 65%;
-                border: solid $outline 1px;
                 border-radius: 8px;
+                transition: all 0.5s;
             }
         }
 
         .project2:hover {
             text-decoration: underline;
+            .mask {
+                overflow: hidden;
+                border: 1px solid $outline;
+                border-radius: 8px;
+            }
+                .img2 {
+                    transform: scale(1.2,1.2);
+                    transition: all 0.5s;
+                }
         }
 
         .project3 {
@@ -188,14 +213,22 @@ div {
                 width: 100%;
                 background-size: cover;
                 padding-bottom: 65%;
-                border: solid $outline 1px;
                 border-radius: 8px;
+                transition: all 0.5s;
             }
         }
 
         .project3:hover {
             text-decoration: underline;
-            box-sizing: border-box;
+            .mask {
+                overflow: hidden;
+                border: 1px solid $outline;
+                border-radius: 8px;
+            }
+                .img3 {
+                    transform: scale(1.2,1.2);
+                    transition: all 0.5s;
+                }
         }
     }
 

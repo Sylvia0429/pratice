@@ -150,7 +150,7 @@ div {
   justify-content: center;
 }
 .projects .title .line {
-  width: 30vw;
+  width: 25%;
   height: 1px;
   border-top: solid #CAC4D0 1px;
 }
@@ -173,6 +173,11 @@ div {
   padding: 12px 0px;
   text-align: left;
 }
+.projects .project .project1 .mask, .projects .project .project2 .mask, .projects .project .project3 .mask {
+  overflow: hidden;
+  border: 1px solid #CAC4D0;
+  border-radius: 8px;
+}
 .projects .project .project1 {
   width: 32%;
 }
@@ -181,11 +186,20 @@ div {
   width: 100%;
   background-size: cover;
   padding-bottom: 65%;
-  border: solid #CAC4D0 1px;
   border-radius: 8px;
+  transition: all 0.5s;
 }
 .projects .project .project1:hover {
   text-decoration: underline;
+}
+.projects .project .project1:hover .mask {
+  overflow: hidden;
+  border: 1px solid #CAC4D0;
+  border-radius: 8px;
+}
+.projects .project .project1:hover .img1 {
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s;
 }
 .projects .project .project2 {
   width: 32%;
@@ -196,11 +210,20 @@ div {
   background-size: cover;
   background-position: 0px -10px;
   padding-bottom: 65%;
-  border: solid #CAC4D0 1px;
   border-radius: 8px;
+  transition: all 0.5s;
 }
 .projects .project .project2:hover {
   text-decoration: underline;
+}
+.projects .project .project2:hover .mask {
+  overflow: hidden;
+  border: 1px solid #CAC4D0;
+  border-radius: 8px;
+}
+.projects .project .project2:hover .img2 {
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s;
 }
 .projects .project .project3 {
   width: 32%;
@@ -210,12 +233,20 @@ div {
   width: 100%;
   background-size: cover;
   padding-bottom: 65%;
-  border: solid #CAC4D0 1px;
   border-radius: 8px;
+  transition: all 0.5s;
 }
 .projects .project .project3:hover {
   text-decoration: underline;
-  box-sizing: border-box;
+}
+.projects .project .project3:hover .mask {
+  overflow: hidden;
+  border: 1px solid #CAC4D0;
+  border-radius: 8px;
+}
+.projects .project .project3:hover .img3 {
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s;
 }
 .projects .more {
   background: #0A95C3;
