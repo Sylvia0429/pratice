@@ -146,6 +146,7 @@ div {
         }
 
         .project1, .project2, .project3 {
+            width: 32%;
             .mask {
                 overflow: hidden;
                 border: 1px solid $outline;
@@ -154,7 +155,6 @@ div {
         }
 
         .project1 {
-            width: 32%;
             .img1 {
                 background: url('../img/ing1.png') no-repeat;
                 width: 100%;
@@ -179,8 +179,6 @@ div {
         }
 
         .project2 {
-            width: 32%;
-
             .img2 {
                 background: url('../img/img2.png') no-repeat;
                 width: 100%;
@@ -206,8 +204,6 @@ div {
         }
 
         .project3 {
-            width: 32%;
-
             .img3 {
                 background: url('../img/img3.png') no-repeat;
                 width: 100%;
@@ -307,7 +303,7 @@ div {
 }
 
 @media screen and (max-width: $max) {
-   
+  
     .header {
         .in {
             padding: 0px 16px;
